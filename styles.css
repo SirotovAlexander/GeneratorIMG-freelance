@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-  height: 2.5rem; /* h-10 */
+  height: 2.5rem;
 }
 
 header nav a {
@@ -66,6 +66,10 @@ section {
 #image-container {
   overflow: hidden;
   max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* #image-container {
   display: grid;
@@ -103,7 +107,7 @@ section {
   display: none;
 }
 .textareaForPromt__input {
-  width: 100%;
+  width: 60%;
   height: 20px;
   padding: 0.5rem 0;
   margin-bottom: 10px;
@@ -127,6 +131,8 @@ aside {
   aside {
     height: 100%;
     width: 20%; /* lg:w-1/4 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
     margin-left: 1.5rem; /* lg:ml-6 */
     margin-top: 0;
   }
@@ -168,17 +174,18 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-button::after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-image: url("./rocket.svg");
-  background-position: center;
+
+@media (max-width: 649px) {
+  button {
+    position: static;
+  }
 }
 
 button:hover {
-  background-color: #3182ce; /* hover:bg-blue-600 */
+  background-color: #fff;
+  color: #4299e1;
+  border: solid 1px #4299e1;
+  border-radius: 5px;
 }
 
 img {
