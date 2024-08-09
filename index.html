@@ -31,7 +31,7 @@
             class="generated__img"
             width="30"
             height="30"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04u9VjnYH1RmU368vCin_Hnz4jMufcnh8MQ&s"
+            src="./Background.png"
             alt="not found"
           />
 
@@ -43,9 +43,16 @@
             class="textareaForPromt__input"
             type="text"
             id="prompt"
-            placeholder="Enter your prompt here..."
+            placeholder="Describe what you want to see with phrases, and separate them with commas."
           />
-          <button id="generate-btn">Generate</button>
+          <!-- <button id="generate-btn">Generate</button> -->
+          <div class="searchSvg">
+            <img src="./Container.svg" width="40" height="40" alt="search" />
+          </div>
+          <a href="#" class="buttonGen"
+            >Generate<spans>|</spans><span>5</span
+            ><img src="./star.png" width="16" height="16" alt="star"
+          /></a>
         </div>
       </section>
 
@@ -86,11 +93,6 @@
             <option value="2">2</option>
             <option value="3">3</option>
           </select>
-        </div>
-        <div>
-          <label for="rangeFor">Range Value</label>
-          <p class="rangeValue">Range Value</p>
-          <input type="range" id="rangeFor" min="0" max="100" value="0" />
         </div>
       </aside>
     </main>
