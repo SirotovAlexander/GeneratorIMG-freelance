@@ -9,7 +9,7 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="flex items-center">
+      <div class="header-container">
         <img src="logo.png" alt="Logo" />
         <nav>
           <a href="#">Generate</a>
@@ -26,9 +26,26 @@
     <main>
       <!-- Image Generation Section -->
       <section>
-        <h1>Generated Images</h1>
         <div id="image-container">
+          <img
+            class="generated__img"
+            width="30"
+            height="30"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04u9VjnYH1RmU368vCin_Hnz4jMufcnh8MQ&s"
+            alt="not found"
+          />
+
           <!-- Generated images will appear here -->
+        </div>
+        <div class="textareaForPromt">
+          <label class="labelForPromt" for="prompt">Enter Text</label>
+          <input
+            class="textareaForPromt__input"
+            type="text"
+            id="prompt"
+            placeholder="Enter your prompt here..."
+          />
+          <button id="generate-btn">Generate</button>
         </div>
       </section>
 
@@ -70,20 +87,10 @@
             <option value="3">3</option>
           </select>
         </div>
-
-        <div>
-          <label for="prompt">Enter Text</label>
-          <input
-            type="text"
-            id="prompt"
-            placeholder="Enter your prompt here..."
-          />
-          <button id="generate-btn">Generate</button>
-        </div>
       </aside>
     </main>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
