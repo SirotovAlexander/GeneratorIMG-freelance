@@ -1,6 +1,11 @@
 /* styles.css */
 
 /* Основные стили */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   background-color: #f7fafc; /* bg-gray-100 */
   font-family: "Helvetica Neue", Arial, sans-serif;
