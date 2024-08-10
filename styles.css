@@ -79,7 +79,7 @@ section {
   padding: 10px 10px 10px 24px;
   max-width: 900px;
   width: 100%;
-  height: 40px;
+  height: 80px;
   background-color: #ffff;
 
   display: flex;
@@ -87,7 +87,7 @@ section {
   justify-content: space-between;
   align-items: center;
   border: solid 1px #fff;
-  border-radius: 5px;
+  border-radius: 35px;
 }
 .labelForPromt {
   display: none;
@@ -102,6 +102,9 @@ section {
 :focus {
   outline: 0;
   outline-offset: 0;
+}
+.textareaForPromt__input::placeholder {
+  font-size: 14px;
 }
 /* Стили для Aside */
 aside {
