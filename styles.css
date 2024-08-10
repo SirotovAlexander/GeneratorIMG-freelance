@@ -63,13 +63,13 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 750px;
 
   flex: 1;
   background-color: #f7fafc;
-  padding: 1.5rem;
+  padding: 0 24px 24px 24px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem; */
 }
